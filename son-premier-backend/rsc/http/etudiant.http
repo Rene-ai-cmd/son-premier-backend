@@ -1,0 +1,17 @@
+### Récupérer tous les étudiants
+GET http://localhost:8000/etudiant
+Accept: application/json
+
+### Créer un étudiant
+POST http://localhost:8000/etudiant
+Content-Type: application/json
+
+{
+  "ageEtudiant": 19,
+  "matricule": 12345,
+  "nomEtudiant": "Linus Torvalds àéî()",
+  "programme": "Techniques de l'Informatique"
+}
+
+### Suppression d'un étudiant
+DELETE {{baseUrl}}/etudiant?idEtudiant=2
